@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/42sh/!svn/ver/1/src/builtin_cd
+END
+make_pwd.c
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/42sh/!svn/ver/1/src/builtin_cd/make_pwd.c
+END
+go_from_root.c
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/42sh/!svn/ver/1/src/builtin_cd/go_from_root.c
+END
+my_cd.c
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/42sh/!svn/ver/1/src/builtin_cd/my_cd.c
+END

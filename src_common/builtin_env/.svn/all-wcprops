@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/42sh/!svn/ver/1/src/builtin_env
+END
+check_builtins_env_syntax.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/42sh/!svn/ver/1/src/builtin_env/check_builtins_env_syntax.c
+END
+my_builtins_env.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/42sh/!svn/ver/1/src/builtin_env/my_builtins_env.c
+END

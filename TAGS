@@ -1,0 +1,352 @@
+
+src_server/main_server.c,45
+FLAG			check_port(19,365
+int			main(27,538
+
+src_server/init_server.c,120
+int			init_ftp_socket(19,365
+int			init_socket_data(43,1152
+int			init_socket_cmd(65,1889
+int			init_server(90,2730
+
+src_server/multi_client.c,94
+static t_server		*server;server20,387
+void			gere_sigint(22,414
+int			multi_client(28,500
+
+src_server/init_connection.c,93
+int			data_connection(18,361
+int			welcome_msg(31,643
+int			init_connection_server(44,916
+
+src_server/server_tools.c,117
+#define	_GNU_SOURCE11,243
+int			send_cmd_s_to_c(22,440
+int			recv_cmd_from_client(32,598
+void			send_size(43,801
+
+src_server/shell_server.c,162
+static t_server		*server;server19,370
+void			print_shell(21,397
+static void		gere_sigusr(41,945
+static void		gere_sigint(51,1122
+int			shell_server(57,1226
+
+src_server/do_cmds.c,119
+static t_functions		gl_func[gl_func19,360
+void			pwd_server(31,670
+void			cd_server(40,819
+void			do_cmds(51,1020
+
+src_server/manage_cmds.c,26
+int			manage_cmds(18,349
+
+src_server/quit.c,85
+void		quit_client_closed(18,334
+void		quit(30,649
+void		quit_whole_server(45,1018
+
+src_server/recv_file.c,112
+int			check_file(24,468
+int			get_size(41,946
+void			transfert_from_socket(57,1307
+void			recv_file(73,1712
+
+src_server/send_file.c,117
+int			send_file_ok(23,448
+void			send_file_to_client(42,930
+int			can_send_file(61,1378
+void			send_file(75,1609
+
+src_server/user.c,139
+t_users			users[users19,356
+void			build_vars_for_user(24,449
+int			passwd_ok(43,1126
+int			login_ok(64,1615
+void			get_user(84,2020
+
+src_common/builtin_cd_serv/go_from_root.c,28
+int		move_from_root(17,333
+
+src_common/builtin_cd_serv/make_pwd.c,108
+char		**tab_cpy(tab_cpy17,325
+char		**make_pwd_tab(make_pwd_tab33,568
+char		*make_pwd(make_pwd61,1177
+
+src_common/builtin_cd_serv/my_cd.c,142
+char		**add_path_to_pwd(add_path_to_pwd17,319
+int		go_to_home(45,799
+int		go_somewhere(65,1230
+int		go_back(89,1836
+int		my_cd(108,2259
+
+src_client/main_client.c,19
+int			main(18,345
+
+src_client/init_client.c,100
+static int		init_socket_data(17,326
+static int		init_socket_cmd(36,923
+int			init_client(59,1665
+
+src_client/init_connection.c,94
+int			check_connect(18,361
+int			check_welcome(42,936
+int			init_connection_client(62,1384
+
+src_client/client_tools.c,101
+int			send_cmd_c_to_s(19,375
+int			recv_cmd_from_server(29,533
+char			*clean_cmd(clean_cmd40,736
+
+src_client/quit.c,80
+void			quit_client(17,312
+void			quit_init_failure(33,696
+void			quit(46,977
+
+src_client/shell_client.c,201
+static t_client		*client;client20,390
+static void		gere_sigint(22,417
+static void		gere_sigpipe(28,518
+static void		gere_sigusr(36,684
+static void		gere_signals(46,861
+int			shell_client(53,990
+
+src_client/manage_cmds.c,57
+void			define_cmd_type(18,348
+int			manage_cmds(37,792
+
+src_client/do_cmds.c,112
+static t_functions	gl_f[gl_f19,362
+SOCKET			define_to(30,621
+int			data_status(39,789
+int			do_cmds(50,982
+
+src_client/print_shell.c,27
+void			print_shell(19,368
+
+src_client/checK_list.c,63
+static t_functions		gl_f[gl_f16,310
+int			check_list(26,525
+
+src_client/send_file.c,170
+#define _GNU_SOURCE11,232
+int			send_syntax_ok(25,489
+int			send_file_ok(50,1100
+int			transfert_on_socket(63,1429
+int			send_size(73,1645
+void			send_file(98,2145
+
+src_client/recv_file.c,120
+int			check_file_on_client(24,468
+int			file_exits_on_server(39,763
+int			get_size(58,1190
+void			recv_file(72,1435
+
+src_client/user.c,164
+#define _XOPEN_SOURCE11,224
+int			syntax_user_ok(21,399
+int			send_user_ok(31,537
+int			passwd_ctrl(51,934
+int			passwd_ok(71,1298
+void			user_authen(97,1909
+
+src_client/cmds.c,90
+void			print_answer(18,336
+void			myCd(25,452
+void			myLs(45,915
+void			myPwd(64,1334
+
+src_common/builtin_cd_client/go_from_root.c,28
+int		move_from_root(17,333
+
+src_common/builtin_cd_client/make_pwd.c,108
+char		**tab_cpy(tab_cpy17,325
+char		**make_pwd_tab(make_pwd_tab33,568
+char		*make_pwd(make_pwd61,1164
+
+src_common/builtin_cd_client/my_cd.c,142
+char		**add_path_to_pwd(add_path_to_pwd17,319
+int		go_to_home(45,799
+int		go_somewhere(65,1230
+int		go_back(89,1818
+int		my_cd(108,2241
+
+src_client/checks.c,146
+FLAG			check_each_nbs(17,321
+FLAG			check_ip(42,749
+FLAG			check_args(57,1007
+FLAG			check_init(70,1268
+FLAG			check_init_connection(85,1542
+
+src_common/my/my_getnbr.c,23
+int		my_getnbr(13,248
+
+src_common/my/my_memset.c,35
+void		*my_memset(my_memset11,231
+
+src_common/my/my_put_tools.c,99
+void		my_putchar(14,277
+void		my_putstr(19,330
+void		my_puterror(24,399
+void		my_putnbr(29,470
+
+src_common/my/my_strcat.c,103
+char		*my_strcat(my_strcat13,248
+char		*my_strncat(my_strncat40,650
+char		*replace(replace52,862
+
+src_common/my/my_strcmp.c,47
+int		my_strcmp(14,268
+int		my_strncmp(34,564
+
+src_common/my/my_strcpy.c,125
+void		my_strcpy(11,231
+void		my_strncpy(26,385
+void		my_strcpy2(41,546
+void		my_strcpy3(56,714
+void		my_strcpy4(83,1017
+
+src_common/my/my_strdup.c,146
+char		*my_strdup(my_strdup14,268
+char		*my_strdup2(my_strdup225,444
+char		*my_strdup3(my_strdup336,637
+char		*my_strdup4(my_strdup447,830
+
+src_common/my/my_strlen.c,71
+int		my_strlen(11,231
+int		my_strlen2(23,353
+int		my_strlen3(35,489
+
+src_common/my/my_tablen.c,23
+int		my_tablen(13,253
+
+src_common/my/my_xfree.c,110
+void		*my_xfree(my_xfree14,272
+char		*my_xxfree(my_xxfree24,378
+char		**my_xfree_tab(my_xfree_tab34,485
+
+src_common/my/my_xclose.c,24
+int			my_xclose(14,269
+
+src_common/my/my_xwrite.c,47
+int			my_xwrite(14,266
+int			my_xread(24,451
+
+src_common/my/my_xmalloc.c,76
+void		*my_xmalloc(my_xmalloc14,270
+void		*my_xxmalloc(my_xxmalloc25,434
+
+src_common/my/my_xfunctions.c,47
+int			my_xchdir(16,319
+int			my_xstat(29,474
+
+src_common/my/my_str_is_num.c,25
+int			str_is_num(13,256
+
+src_common/my/my_strstr.c,23
+int		my_strstr(11,223
+
+src_common/my/my_getenv.c,87
+int		find_char(16,311
+int		find_pos_in_env(32,511
+char		*my_getenv(my_getenv51,856
+
+src_common/get/get_cmd.c,31
+char		*get_cmd(get_cmd14,251
+
+src_common/get/get_argc_argv.c,159
+static int	is_printable(14,276
+static int	char_ok(21,371
+static char	*fill_array(fill_array28,499
+int		get_argc(46,861
+char		**get_argv(get_argv69,1140
+
+src_common/get/get_ip.c,168
+static int	is_printable(14,276
+static int	char_ok(21,371
+static char	*fill_array(fill_array28,473
+int		get_ip_argc(46,835
+char		**get_ip_argv(get_ip_argv69,1117
+
+src_common/get/get_cd_path.c,167
+static int	is_printable(14,276
+static int	char_ok(21,371
+static char	*fill_array(fill_array28,473
+int		get_nb_pwd(46,835
+char		**get_cd_path(get_cd_path69,1116
+
+src_common/get/get_file_size.c,36
+unsigned int		get_file_size(14,258
+
+src_common/get/get_pwd.c,31
+char		*get_pwd(get_pwd16,303
+
+src_common/get/get_home.c,33
+char		*get_home(get_home18,348
+
+src_common/tab/tab_tools.c,152
+char		*concat_tab_elems(concat_tab_elems15,283
+char		*concat_tab_elems2(concat_tab_elems241,748
+char		*nconcat_tab_elems(nconcat_tab_elems64,1142
+
+src_common/tab/tab_functions.c,249
+char		**add_elem_to_tab(add_elem_to_tab15,293
+char		**delete_elem_in_tab(delete_elem_in_tab33,685
+char		**update_elem_in_tab(update_elem_in_tab55,1101
+char		**delete_last_elem_in_tab(delete_last_elem_in_tab78,1577
+void		my_show_tab(95,1927
+
+src_common/tab/sort_word.c,66
+# define	MAX(16,291
+int		str_cmp(18,343
+void		sort_word(41,624
+
+src_common/list/list_functions.c,48
+int			list_size(15,296
+void		free_list(30,467
+
+src_common/list/list_functions_2.c,174
+t_list			*init_list(init_list15,298
+t_list			*add_elem_at_end(add_elem_at_end28,504
+t_list			*delete_elem_at_begin(delete_elem_at_begin49,867
+void			list_dump(60,1048
+
+src_common/list/ls.c,50
+void			ls_server(21,395
+void			ls_client(36,642
+
+src_common/xfunctions/xfunctions_network.c,76
+SOCKET			my_xsocket(20,414
+int			my_xbind(30,590
+int			my_xlisten(43,819
+
+src_common/xfunctions/xfunctions_network_2.c,80
+int			my_xaccept(20,415
+int			my_xconnect(31,621
+int			my_xsetsockopt(45,861
+
+src_common/builtin_env/my_builtins_env.c,128
+int		my_setenv(20,429
+int		my_unsetenv(47,947
+int		my_env(74,1465
+int		my_update_env(84,1632
+int		my_up_or_setenv(112,2260
+
+src_common/builtin_env/check_builtins_env_syntax.c,99
+int		check_setenv_syntax(16,345
+int		check_unsetenv_syntax(37,823
+int		check_env_syntax(46,1010
+
+src_common/init_vars.c,97
+void			clean_vars(16,302
+char			**get_extern_env(get_extern_env30,614
+int			init_vars(49,933
+
+src_common/SDL.c,205
+static	t_mysdl		*my_sdl;my_sdl22,423
+static	t_ftp		*my_ftp;my_ftp23,448
+int			init_SDL(25,472
+static void		gere_sigpipe(48,1192
+void			draw(64,1604
+void			get_file(79,1895
+void			mainSDL(100,2382
